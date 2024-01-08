@@ -54,7 +54,7 @@ def main():
             current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
             # Read quantity_fetch_time.csv
-            quantity_fetch_time_df = pd.read_csv('J:\\OutPut\\testing\\quantity_fetch_time.csv')
+            quantity_fetch_time_df = pd.read_csv('quantity_fetch_time.csv')
             quantity_fetch_time = pd.to_datetime(quantity_fetch_time_df['Fetch Time'].iloc[0])
 
             # Update time_display placeholder
