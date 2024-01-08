@@ -19,7 +19,7 @@ def login():
 
 def fetch_data():
     try:
-        df = pd.read_csv('M:\\append_testing\DC\PNL_Team.csv')
+        df = pd.read_csv('PNL_Team.csv')
         df[['Mrg', 'Y_PNL', 'E_PNL', 'O_PNL', 'I_PNL', 'T_PNL']] = df[['Mrg', 'Y_PNL', 'E_PNL', 'O_PNL', 'I_PNL', 'T_PNL']].round(2)
         return df
     except Exception as e:
